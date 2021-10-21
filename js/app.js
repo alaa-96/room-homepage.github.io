@@ -2,14 +2,11 @@ const hamburger = document.querySelector('.hamburger');
 const header = document.querySelector('.header');
 const close = document.querySelector('.close');
 const mySlides = document.querySelectorAll('.mySlides');
-const slide = document.getElementById('slide');
 const firstSlide = document.getElementById('first-slide');
 const secondSlide = document.getElementById('second-slide');
 const thirdSlide = document.getElementById('third-slide');
 const leftAngle = document.querySelector('.left');
 const rightAngle = document.querySelector('.right');
-
-var slidesArray = [firstSlide, secondSlide, thirdSlide];
 
 leftAngle.addEventListener('click', prev);
 rightAngle.addEventListener('click', next);
@@ -54,9 +51,6 @@ function addActiveClass() {
   if (header.classList.contains('not-active')) {
     header.classList.remove('not-active');
     header.classList.add('active');
-    // document.body.style.opacity = '0.5';
-    // document.body.style
-    // document.body.style.background = 'hsl(0, 0%, 63%)';
   }
 }
 
