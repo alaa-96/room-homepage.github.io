@@ -1,0 +1,1018 @@
+@import 'reset';
+@import 'fonts-and-colors';
+
+body {
+  font-family: $spartan-font-family;
+  font-size: 12px;
+  width: 100vw;
+}
+
+.header {
+  transition: all 0.5s ease;
+}
+
+.not-active {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-top: 7vh;
+
+  .hamburger {
+    margin: 1.5vh 0% auto 7vw;
+    cursor: pointer;
+  }
+  .logo {
+    position: absolute;
+    left: 42%;
+    top: 40%;
+    margin: auto;
+    height: 2.5vh;
+    // width: 15.5vw;
+  }
+  .navbar {
+    display: none;
+  }
+}
+.active {
+  .hamburger,
+  .logo {
+    display: none;
+  }
+
+  .navbar {
+    padding-top: 4vh;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .close {
+      margin-right: 15vw;
+      cursor: pointer;
+    }
+    .nav-menu {
+      display: flex;
+      flex-direction: row;
+      z-index: 1;
+      background: $white;
+      position: absolute;
+      width: 100%;
+      height: 32vh;
+      padding: 10vh 0% 0% 0%;
+      .nav-item {
+        text-align: center;
+
+        .nav-link {
+          color: $black;
+          opacity: 0.9;
+          text-transform: lowercase;
+          font-weight: 700;
+          font-size: 1.1em;
+          margin: 4vw;
+          padding: 0%;
+          letter-spacing: -0.1em;
+        }
+        .contact {
+          margin-right: 0%;
+        }
+      }
+    }
+  }
+}
+
+main {
+  p {
+    color: $dark-grey;
+    line-height: 1.7em;
+    margin-bottom: 3vh;
+    opacity: 0.8;
+  }
+  .text {
+    height: 50vh;
+    margin: 10vh 5vw auto 2rem;
+
+    h1 {
+      font-weight: bold;
+      margin-bottom: 3vh;
+    }
+
+    h2 {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      border: none;
+      background: none;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.6rem;
+      padding: 0%;
+      margin-top: 4vh;
+      img {
+        margin-bottom: -4px;
+        margin-left: 2vh;
+      }
+    }
+    .btn:hover {
+      color: $dark-grey;
+    }
+  }
+  .slideshow-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    #second-slide,
+    #third-slide {
+      display: none;
+    }
+    .icon-angle-container {
+      position: absolute;
+      top: 50.5%;
+      left: 66.5%;
+      cursor: pointer;
+      .icon-angle {
+        background: black;
+        width: 3.7rem;
+        height: 3.5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        .icon-img {
+          height: 1rem;
+        }
+      }
+      .icon-angle:hover {
+        background: $very-dark-grey;
+      }
+    }
+  }
+  .mySlides {
+    .slide-img {
+      height: 60vh;
+      width: 100%;
+    }
+  }
+  #first-slide {
+    .slide-img {
+      background: url(/images/mobile-image-hero-1.jpg) no-repeat center/cover;
+    }
+  }
+  #second-slide {
+    .slide-img {
+      background: url(/images/mobile-image-hero-2.jpg) no-repeat center/cover;
+    }
+  }
+  #third-slide {
+    .slide-img {
+      background: url(/images/mobile-image-hero-3.jpg) no-repeat center/cover;
+    }
+  }
+  .main-sec {
+    .img {
+      width: 100%;
+      height: 50vh;
+    }
+    .first-img {
+      background: url(/images/image-about-dark.jpg) no-repeat center/cover;
+    }
+    .second-img {
+      background: url(/images/image-about-light.jpg) no-repeat center/cover;
+    }
+    .main-p {
+      margin-bottom: 0%;
+    }
+    .main-txt {
+      height: 35vh;
+    }
+  }
+}
+
+// @media only screen and (min-width: 280px) {
+//   main {
+//     .slideshow-container {
+//       .icon-angle-container {
+//         top: 60%;
+//         left: 63%;
+//       }
+//     }
+//   }
+// }
+
+@media only screen and (min-width: 320px), (min-height: 368px) {
+  main {
+    .slideshow-container {
+      .mySlides {
+        flex-direction: column;
+      }
+      .icon-angle-container {
+        top: 50.2%;
+        left: 63%;
+      }
+    }
+    .main-sec {
+      .main-txt {
+        height: 45vh;
+        margin-left: 2em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 51.1%;
+        left: 67%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 51.5%;
+        left: 68.5%;
+      }
+    }
+    .main-sec {
+      .main-txt {
+        height: 35vh;
+        margin-left: 3em;
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 411px), (min-height: 371) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 52.4%;
+        left: 71.2%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 653px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        left: 57.6%;
+        top: 51.5%;
+      }
+      .text {
+        height: 60vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 667px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        left: 68.5%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 720px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        left: 78%;
+        top: 52.4%;
+      }
+    }
+  }
+}
+@media only screen and (min-height: 731px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        left: 71.1%;
+      }
+    }
+  }
+}
+@media only screen and (min-height: 812px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 53.1%;
+        left: 68.3%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 823px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 53.1%;
+        left: 71%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px), (min-height: 1024px) {
+  .not-active {
+    .hamburger {
+      .icon-hamburger {
+        width: 5vw;
+        height: 2.7vh;
+      }
+    }
+    .logo {
+      width: 16vw;
+      height: 3vh;
+    }
+  }
+  .active {
+    .navbar {
+      .close {
+        margin-right: 10vw;
+        cursor: pointer;
+        .icon-close {
+          width: 5vw;
+          margin-left: 0%;
+        }
+      }
+      .nav-menu {
+        padding: 10vh 0% 0% 0%;
+        .nav-item {
+          .nav-link {
+            font-size: 2em;
+            margin: 3vw;
+          }
+        }
+      }
+    }
+  }
+  main {
+    .slideshow-container {
+      .mySlides {
+        .slide-img,
+        .text {
+          height: 70vh;
+        }
+        .text {
+          padding-left: 3em;
+          padding-top: 3em;
+          padding-right: 1.5em;
+        }
+        h1 {
+          font-size: 4.5em;
+        }
+        p {
+          font-size: 2em;
+        }
+        .btn {
+          font-size: 2em;
+          letter-spacing: 1em;
+          padding-top: 2em;
+          .arrow {
+            width: 3em;
+          }
+        }
+      }
+      .icon-angle-container {
+        top: 60%;
+        left: 70%;
+        .icon-angle {
+          width: 15vw;
+          height: 10vh;
+          .icon-img {
+            width: 3vw;
+            height: 4vh;
+          }
+        }
+      }
+    }
+    .main-sec {
+      h2 {
+        font-size: 1.9em;
+        letter-spacing: 0.5em;
+      }
+      .main-txt {
+        height: 0vh;
+        padding-right: 2em;
+        padding-left: 2em;
+        p {
+          font-size: 1.8em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px), (min-height: 1366px) {
+  .active {
+    .navbar {
+      .nav-menu {
+        .nav-item {
+          .nav-link {
+            font-size: 2.5em;
+            margin: 3vw;
+          }
+        }
+      }
+    }
+  }
+  main {
+    .slideshow-container {
+      .mySlides {
+        h1 {
+          font-size: 6.5em;
+        }
+        p {
+          font-size: 2.7em;
+          padding-right: 0.5em;
+        }
+        .btn {
+          font-size: 2.7em;
+
+          padding-top: 1em;
+        }
+      }
+    }
+    .main-sec {
+      h2 {
+        font-size: 2.5em;
+      }
+      .main-txt {
+        height: 50vh;
+        padding-right: 2em;
+        padding-left: 3em;
+        p {
+          font-size: 2.5em;
+          padding-top: 1em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .not-active {
+    flex-direction: row;
+    .navbar {
+      display: block;
+      width: 50%;
+
+      .nav-menu {
+        list-style: none;
+        position: absolute;
+        top: 1%;
+        left: 35%;
+        opacity: 0.9;
+      }
+      .nav-link {
+        color: $white;
+        text-transform: lowercase;
+      }
+      a {
+        display: inline-block;
+        position: relative;
+      }
+      a:hover:after {
+        content: '';
+        position: absolute;
+        left: 35%;
+        display: inline-block;
+        height: 1em;
+        width: 30%;
+        border-bottom: 2px solid;
+        margin-top: 1em;
+      }
+    }
+    justify-content: flex-start;
+    width: 50%;
+    .logo {
+      position: absolute;
+      top: 70%;
+      left: 8%;
+      height: 1.2em;
+      width: 5em;
+      padding: auto;
+    }
+  }
+  .hamburger {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 60%;
+        left: 57.8%;
+        .icon-angle {
+          height: 6em;
+          width: 7.2em;
+          .icon-img {
+            height: 2em;
+            width: 1em;
+          }
+        }
+      }
+
+      .mySlides {
+        flex-direction: row;
+        height: 65vh;
+        width: 100%;
+        .slide-img {
+          width: 64%;
+        }
+        .text {
+          position: relative;
+          width: 38%;
+
+          h1 {
+            font-size: 3em;
+          }
+          p {
+            font-size: 1em;
+          }
+          .btn {
+            font-size: 1em;
+            margin-top: 0%;
+          }
+        }
+      }
+      #first-slide {
+        display: flex;
+        .slide-img {
+          background: url(/images/desktop-image-hero-1.jpg) no-repeat
+            center/cover;
+        }
+      }
+      #second-slide {
+        display: none;
+        .slide-img {
+          background: url(/images/desktop-image-hero-2.jpg) no-repeat
+            center/cover;
+        }
+      }
+      #third-slide {
+        display: none;
+        .slide-img {
+          background: url(/images/desktop-image-hero-3.jpg) no-repeat
+            center/cover;
+        }
+      }
+    }
+    .main-sec {
+      display: flex;
+      flex-direction: row;
+      .main-txt {
+        width: 30%;
+        height: 40vh;
+        h2 {
+          font-size: 1em;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+      .img {
+        width: 31%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .not-active {
+    .navbar {
+      width: 50%;
+      .nav-link {
+        font-size: 1em;
+      }
+    }
+  }
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        left: 58.6%;
+        top: 60.6%;
+      }
+      .mySlides {
+        .text {
+          h1 {
+            font-size: 3em;
+          }
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+    .main-sec {
+      .img {
+        background-size: auto;
+      }
+      .main-txt {
+        h2 {
+          font-size: 1.2em;
+          letter-spacing: 0.4em;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .not-active {
+    .navbar {
+      width: 60%;
+      .nav-link {
+        font-size: 2.5em;
+      }
+    }
+    .logo {
+      height: 3em;
+      width: 10em;
+    }
+  }
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 62.5%;
+        .icon-angle {
+          height: 9em;
+          width: 9.5em;
+          .icon-img {
+            height: 2.5em;
+            width: 1.5em;
+          }
+        }
+      }
+      .mySlides {
+        .text {
+          h1 {
+            font-size: 4.5em;
+          }
+          p {
+            font-size: 2.5em;
+          }
+          .btn {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+    .main-sec {
+      .main-txt {
+        h2 {
+          font-size: 2em;
+          letter-spacing: 0.5em;
+        }
+        p {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 760px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 60.7%;
+        left: 57.9%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 800px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 61%;
+      }
+    }
+  }
+}
+@media only screen and (min-height: 864px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 61.6%;
+        left: 58.1%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 900px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 62%;
+        left: 58%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 1050px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 63%;
+        left: 58.2%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 1080px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 63.3%;
+        left: 58.3%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 1120px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 63.6%;
+        left: 58.3%;
+      }
+    }
+  }
+}
+@media only screen and (min-height: 1440px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 62.6%;
+        left: 58.7%;
+      }
+    }
+  }
+}
+
+// @media only screen and (min-width: 1366px) {
+//   main {
+//     .slideshow-container {
+//       .icon-angle-container {
+//         top: 60.5%;
+//         left: 57.9%;
+//       }
+//     }
+//   }
+// }
+// @media only screen and (min-width: 320px) {
+//   body {
+//     width: 117.5vw;
+//   }
+//   main {
+//     .slideshow-container {
+//       .icon-angle-container {
+//         top: 53.5%;
+//         left: 80vw;
+//       }
+//     }
+//     .text {
+//       height: 62vh;
+//     }
+//     p {
+//       margin-bottom: 6vh;
+//     }
+//     .main-sec {
+//       .main-txt {
+//         height: 43vh;
+//         margin-right: 8vw;
+//       }
+//     }
+//   }
+// }
+// @media only screen and (min-width: 360px) {
+//   body {
+//     width: 105vw;
+//   }
+//   main {
+//     .slideshow-container {
+//       .icon-angle-container {
+//         top: 47.5%;
+//         left: 71.5vw;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 375px) {
+//   body {
+//     width: 100%;
+//   }
+//   main {
+//     .slideshow-container {
+//       .icon-angle-container {
+//         top: 45.6%;
+//         left: 69vw;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-height: 812px) {
+//   main {
+//     .slideshow-container {
+//       .icon-angle-container {
+//         top: 37.4%;
+//         left: 68.5vw;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 812px), screen and (max-height: 1024px) {
+//   body {
+//     width: 100%;
+//   }
+//   .not-active {
+//     .icon-hamburger {
+//       width: 6vw;
+//     }
+//     .logo {
+//       width: 15vw;
+//       height: 3vh;
+//     }
+//   }
+//   main {
+//     p {
+//       font-size: 1.5rem;
+//       margin-bottom: 5vh;
+//     }
+//     .text {
+//       height: 68vh;
+//       margin-left: 10vw;
+//       margin-top: 15vh;
+//       .btn {
+//         font-size: 2.2em;
+//         letter-spacing: 1em;
+//       }
+//       .arrow {
+//         height: 2.5vh;
+//         width: 10vw;
+//       }
+//       h1 {
+//         font-size: 3.5rem;
+//       }
+//       h2 {
+//         font-size: 2.2em;
+//         letter-spacing: 0.4em;
+//         margin-bottom: 3vh;
+//       }
+//     }
+//     .slideshow-container {
+//       .mySlides {
+//         .img {
+//           width: 100vw;
+//         }
+//       }
+//       .icon-angle-container {
+//         top: 59%;
+//         left: 71vw;
+//         .icon-angle {
+//           width: 14.5vw;
+//           height: 13vh;
+//           .icon-img {
+//             height: 3.5vh;
+//             // width: 3vw;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media only screen and (max-width: 411px), screen and (max-height: 731px) {
+//   body {
+//     width: 100%;
+//   }
+//   main {
+//     p {
+//       font-size: 1.1em;
+//       margin-bottom: 3vh;
+//     }
+//     .text {
+//       height: 50vh;
+//       .btn {
+//         font-size: 1.1em;
+//       }
+//       h2 {
+//         font-size: 1.1em;
+//       }
+//     }
+
+//     .slideshow-container {
+//       .mySlides {
+//         .img {
+//           width: 100vw;
+//         }
+//       }
+//       .icon-angle-container {
+//         top: 46.4%;
+//         left: 71.5vw;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (max-height: 823px) {
+//   .not-active {
+//     .logo {
+//       height: 2vh;
+//     }
+//   }
+//   main {
+//     .slideshow-container {
+//       .icon-angle-container {
+//         top: 41.2%;
+//         left: 71.5vw;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 1024px) {
+//   .not-active {
+//     .icon-hamburger {
+//       width: 6vw;
+//     }
+//     .logo {
+//       width: 15vw;
+//       height: 3vh;
+//     }
+//   }
+//   main {
+//     p {
+//       font-size: 2.7em;
+//     }
+//     .text {
+//       margin-left: 10vw;
+//       margin-top: 15vh;
+//       .btn {
+//         font-size: 2.8em;
+//         letter-spacing: 1em;
+//       }
+//       .arrow {
+//         height: 2.5vh;
+//         width: 10vw;
+//       }
+//       h1 {
+//         font-size: 4.5rem;
+//       }
+//       h2 {
+//         font-size: 2.7em;
+//         letter-spacing: 0.4em;
+//         margin-bottom: 3vh;
+//       }
+//     }
+//     .slideshow-container {
+//       .mySlides {
+//         .img {
+//           width: 100vw;
+//         }
+//       }
+//       .icon-angle-container {
+//         top: 59%;
+//         left: 71vw;
+//         .icon-angle {
+//           width: 14.5vw;
+//           height: 13vh;
+//           .icon-img {
+//             height: 3.5vh;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 1440px) {
+// }

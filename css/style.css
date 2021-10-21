@@ -1,0 +1,784 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 12px;
+  width: 100vw;
+}
+
+.header {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.not-active {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 7vh;
+}
+
+.not-active .hamburger {
+  margin: 1.5vh 0% auto 7vw;
+  cursor: pointer;
+}
+
+.not-active .logo {
+  position: absolute;
+  left: 42%;
+  top: 40%;
+  margin: auto;
+  height: 2.5vh;
+}
+
+.not-active .navbar {
+  display: none;
+}
+
+.active .hamburger,
+.active .logo {
+  display: none;
+}
+
+.active .navbar {
+  padding-top: 4vh;
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.active .navbar .close {
+  margin-right: 15vw;
+  cursor: pointer;
+}
+
+.active .navbar .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 1;
+  background: white;
+  position: absolute;
+  width: 100%;
+  height: 32vh;
+  padding: 10vh 0% 0% 0%;
+}
+
+.active .navbar .nav-menu .nav-item {
+  text-align: center;
+}
+
+.active .navbar .nav-menu .nav-item .nav-link {
+  color: black;
+  opacity: 0.9;
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 1.1em;
+  margin: 4vw;
+  padding: 0%;
+  letter-spacing: -0.1em;
+}
+
+.active .navbar .nav-menu .nav-item .contact {
+  margin-right: 0%;
+}
+
+main p {
+  color: #a1a1a1;
+  line-height: 1.7em;
+  margin-bottom: 3vh;
+  opacity: 0.8;
+}
+
+main .text {
+  height: 50vh;
+  margin: 10vh 5vw auto 2rem;
+}
+
+main .text h1 {
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+
+main .text h2 {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+main .text .btn {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.6rem;
+  padding: 0%;
+  margin-top: 4vh;
+}
+
+main .text .btn img {
+  margin-bottom: -4px;
+  margin-left: 2vh;
+}
+
+main .text .btn:hover {
+  color: #a1a1a1;
+}
+
+main .slideshow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0%;
+}
+
+main .slideshow-container #second-slide,
+main .slideshow-container #third-slide {
+  display: none;
+}
+
+main .slideshow-container .icon-angle-container {
+  position: absolute;
+  top: 50.5%;
+  left: 66.5%;
+  cursor: pointer;
+}
+
+main .slideshow-container .icon-angle-container .icon-angle {
+  background: black;
+  width: 3.7rem;
+  height: 3.5rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .slideshow-container .icon-angle-container .icon-angle .icon-img {
+  height: 1rem;
+}
+
+main .slideshow-container .icon-angle-container .icon-angle:hover {
+  background: #454545;
+}
+
+main .mySlides .slide-img {
+  height: 60vh;
+  width: 100%;
+}
+
+main #first-slide .slide-img {
+  background: url(/images/mobile-image-hero-1.jpg) no-repeat center/cover;
+}
+
+main #second-slide .slide-img {
+  background: url(/images/mobile-image-hero-2.jpg) no-repeat center/cover;
+}
+
+main #third-slide .slide-img {
+  background: url(/images/mobile-image-hero-3.jpg) no-repeat center/cover;
+}
+
+main .main-sec .img {
+  width: 100%;
+  height: 50vh;
+}
+
+main .main-sec .first-img {
+  background: url(/images/image-about-dark.jpg) no-repeat center/cover;
+}
+
+main .main-sec .second-img {
+  background: url(/images/image-about-light.jpg) no-repeat center/cover;
+}
+
+main .main-sec .main-p {
+  margin-bottom: 0%;
+}
+
+main .main-sec .main-txt {
+  height: 35vh;
+}
+
+@media only screen and (min-width: 320px), (min-height: 368px) {
+  main .slideshow-container .mySlides {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .slideshow-container .icon-angle-container {
+    top: 50.2%;
+    left: 63%;
+  }
+  main .main-sec .main-txt {
+    height: 45vh;
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  main .slideshow-container .icon-angle-container {
+    top: 51.1%;
+    left: 67%;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  main .slideshow-container .icon-angle-container {
+    top: 51.5%;
+    left: 68.5%;
+  }
+  main .main-sec .main-txt {
+    height: 35vh;
+    margin-left: 3em;
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 411px), (min-height: 371) {
+  main .slideshow-container .icon-angle-container {
+    top: 52.4%;
+    left: 71.2%;
+  }
+}
+
+@media only screen and (min-height: 653px) {
+  main .slideshow-container .icon-angle-container {
+    left: 57.6%;
+    top: 51.5%;
+  }
+  main .slideshow-container .text {
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-height: 667px) {
+  main .slideshow-container .icon-angle-container {
+    left: 68.5%;
+  }
+}
+
+@media only screen and (min-height: 720px) {
+  main .slideshow-container .icon-angle-container {
+    left: 78%;
+    top: 52.4%;
+  }
+}
+
+@media only screen and (min-height: 731px) {
+  main .slideshow-container .icon-angle-container {
+    left: 71.1%;
+  }
+}
+
+@media only screen and (min-height: 812px) {
+  main .slideshow-container .icon-angle-container {
+    top: 53.1%;
+    left: 68.3%;
+  }
+}
+
+@media only screen and (min-height: 823px) {
+  main .slideshow-container .icon-angle-container {
+    top: 53.1%;
+    left: 71%;
+  }
+}
+
+@media only screen and (min-width: 768px), (min-height: 1024px) {
+  .not-active .hamburger .icon-hamburger {
+    width: 5vw;
+    height: 2.7vh;
+  }
+  .not-active .logo {
+    width: 16vw;
+    height: 3vh;
+  }
+  .active .navbar .close {
+    margin-right: 10vw;
+    cursor: pointer;
+  }
+  .active .navbar .close .icon-close {
+    width: 5vw;
+    margin-left: 0%;
+  }
+  .active .navbar .nav-menu {
+    padding: 10vh 0% 0% 0%;
+  }
+  .active .navbar .nav-menu .nav-item .nav-link {
+    font-size: 2em;
+    margin: 3vw;
+  }
+  main .slideshow-container .mySlides .slide-img,
+  main .slideshow-container .mySlides .text {
+    height: 70vh;
+  }
+  main .slideshow-container .mySlides .text {
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-right: 1.5em;
+  }
+  main .slideshow-container .mySlides h1 {
+    font-size: 4.5em;
+  }
+  main .slideshow-container .mySlides p {
+    font-size: 2em;
+  }
+  main .slideshow-container .mySlides .btn {
+    font-size: 2em;
+    letter-spacing: 1em;
+    padding-top: 2em;
+  }
+  main .slideshow-container .mySlides .btn .arrow {
+    width: 3em;
+  }
+  main .slideshow-container .icon-angle-container {
+    top: 60%;
+    left: 70%;
+  }
+  main .slideshow-container .icon-angle-container .icon-angle {
+    width: 15vw;
+    height: 10vh;
+  }
+  main .slideshow-container .icon-angle-container .icon-angle .icon-img {
+    width: 3vw;
+    height: 4vh;
+  }
+  main .main-sec h2 {
+    font-size: 1.9em;
+    letter-spacing: 0.5em;
+  }
+  main .main-sec .main-txt {
+    height: 0vh;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+  main .main-sec .main-txt p {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 1024px), (min-height: 1366px) {
+  .active .navbar .nav-menu .nav-item .nav-link {
+    font-size: 2.5em;
+    margin: 3vw;
+  }
+  main .slideshow-container .mySlides h1 {
+    font-size: 6.5em;
+  }
+  main .slideshow-container .mySlides p {
+    font-size: 2.7em;
+    padding-right: 0.5em;
+  }
+  main .slideshow-container .mySlides .btn {
+    font-size: 2.7em;
+    padding-top: 1em;
+  }
+  main .main-sec h2 {
+    font-size: 2.5em;
+  }
+  main .main-sec .main-txt {
+    height: 50vh;
+    padding-right: 2em;
+    padding-left: 3em;
+  }
+  main .main-sec .main-txt p {
+    font-size: 2.5em;
+    padding-top: 1em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .not-active {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 50%;
+  }
+  .not-active .navbar {
+    display: block;
+    width: 50%;
+  }
+  .not-active .navbar .nav-menu {
+    list-style: none;
+    position: absolute;
+    top: 1%;
+    left: 35%;
+    opacity: 0.9;
+  }
+  .not-active .navbar .nav-link {
+    color: white;
+    text-transform: lowercase;
+  }
+  .not-active .navbar a {
+    display: inline-block;
+    position: relative;
+  }
+  .not-active .navbar a:hover:after {
+    content: '';
+    position: absolute;
+    left: 35%;
+    display: inline-block;
+    height: 1em;
+    width: 30%;
+    border-bottom: 2px solid;
+    margin-top: 1em;
+  }
+  .not-active .logo {
+    position: absolute;
+    top: 70%;
+    left: 8%;
+    height: 1.2em;
+    width: 5em;
+    padding: auto;
+  }
+  .hamburger {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+  main .slideshow-container .icon-angle-container {
+    top: 60%;
+    left: 57.8%;
+  }
+  main .slideshow-container .icon-angle-container .icon-angle {
+    height: 6em;
+    width: 7.2em;
+  }
+  main .slideshow-container .icon-angle-container .icon-angle .icon-img {
+    height: 2em;
+    width: 1em;
+  }
+  main .slideshow-container .mySlides {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 65vh;
+    width: 100%;
+  }
+  main .slideshow-container .mySlides .slide-img {
+    width: 64%;
+  }
+  main .slideshow-container .mySlides .text {
+    position: relative;
+    width: 38%;
+  }
+  main .slideshow-container .mySlides .text h1 {
+    font-size: 3em;
+  }
+  main .slideshow-container .mySlides .text p {
+    font-size: 1em;
+  }
+  main .slideshow-container .mySlides .text .btn {
+    font-size: 1em;
+    margin-top: 0%;
+  }
+  main .slideshow-container #first-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .slideshow-container #first-slide .slide-img {
+    background: url(/images/desktop-image-hero-1.jpg) no-repeat center/cover;
+  }
+  main .slideshow-container #second-slide {
+    display: none;
+  }
+  main .slideshow-container #second-slide .slide-img {
+    background: url(/images/desktop-image-hero-2.jpg) no-repeat center/cover;
+  }
+  main .slideshow-container #third-slide {
+    display: none;
+  }
+  main .slideshow-container #third-slide .slide-img {
+    background: url(/images/desktop-image-hero-3.jpg) no-repeat center/cover;
+  }
+  main .main-sec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .main-sec .main-txt {
+    width: 30%;
+    height: 40vh;
+  }
+  main .main-sec .main-txt h2 {
+    font-size: 1em;
+  }
+  main .main-sec .main-txt p {
+    font-size: 1em;
+  }
+  main .main-sec .img {
+    width: 31%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .not-active .navbar {
+    width: 50%;
+  }
+  .not-active .navbar .nav-link {
+    font-size: 1em;
+  }
+  main .slideshow-container .icon-angle-container {
+    left: 58.6%;
+    top: 60.6%;
+  }
+  main .slideshow-container .mySlides .text h1 {
+    font-size: 3em;
+  }
+  main .slideshow-container .mySlides .text p {
+    font-size: 1em;
+  }
+  main .main-sec .img {
+    background-size: auto;
+  }
+  main .main-sec .main-txt h2 {
+    font-size: 1.2em;
+    letter-spacing: 0.4em;
+  }
+  main .main-sec .main-txt p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .not-active .navbar {
+    width: 60%;
+  }
+  .not-active .navbar .nav-link {
+    font-size: 2.5em;
+  }
+  .not-active .logo {
+    height: 3em;
+    width: 10em;
+  }
+  main .slideshow-container .icon-angle-container {
+    top: 62.5%;
+  }
+  main .slideshow-container .icon-angle-container .icon-angle {
+    height: 9em;
+    width: 9.5em;
+  }
+  main .slideshow-container .icon-angle-container .icon-angle .icon-img {
+    height: 2.5em;
+    width: 1.5em;
+  }
+  main .slideshow-container .mySlides .text h1 {
+    font-size: 4.5em;
+  }
+  main .slideshow-container .mySlides .text p {
+    font-size: 2.5em;
+  }
+  main .slideshow-container .mySlides .text .btn {
+    font-size: 2em;
+  }
+  main .main-sec .main-txt h2 {
+    font-size: 2em;
+    letter-spacing: 0.5em;
+  }
+  main .main-sec .main-txt p {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-height: 760px) {
+  main .slideshow-container .icon-angle-container {
+    top: 60.7%;
+    left: 57.9%;
+  }
+}
+
+@media only screen and (min-height: 800px) {
+  main .slideshow-container .icon-angle-container {
+    top: 61%;
+  }
+}
+
+@media only screen and (min-height: 864px) {
+  main .slideshow-container .icon-angle-container {
+    top: 61.6%;
+    left: 58.1%;
+  }
+}
+
+@media only screen and (min-height: 900px) {
+  main .slideshow-container .icon-angle-container {
+    top: 62%;
+    left: 58%;
+  }
+}
+
+@media only screen and (min-height: 1050px) {
+  main .slideshow-container .icon-angle-container {
+    top: 63%;
+    left: 58.2%;
+  }
+}
+
+@media only screen and (min-height: 1080px) {
+  main .slideshow-container .icon-angle-container {
+    top: 63.3%;
+    left: 58.3%;
+  }
+}
+
+@media only screen and (min-height: 1120px) {
+  main .slideshow-container .icon-angle-container {
+    top: 63.6%;
+    left: 58.3%;
+  }
+}
+
+@media only screen and (min-height: 1440px) {
+  main .slideshow-container .icon-angle-container {
+    top: 62.6%;
+    left: 58.7%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
