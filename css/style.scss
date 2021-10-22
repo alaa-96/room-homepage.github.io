@@ -5,6 +5,8 @@ body {
   font-family: $spartan-font-family;
   font-size: 12px;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -131,7 +133,8 @@ main {
     .icon-angle-container {
       position: absolute;
       top: 50.5%;
-      left: 66.5%;
+      right: 0%;
+
       cursor: pointer;
       .icon-angle {
         background: black;
@@ -200,7 +203,6 @@ main {
       }
       .icon-angle-container {
         top: 50.2%;
-        left: 63%;
       }
     }
     .main-sec {
@@ -212,12 +214,21 @@ main {
   }
 }
 
+@media only screen and (min-width: 320px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 50%;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 360px) {
   main {
     .slideshow-container {
       .icon-angle-container {
         top: 51.1%;
-        left: 67%;
       }
     }
   }
@@ -228,7 +239,6 @@ main {
     .slideshow-container {
       .icon-angle-container {
         top: 51.5%;
-        left: 68.5%;
       }
     }
     .main-sec {
@@ -246,17 +256,15 @@ main {
     .slideshow-container {
       .icon-angle-container {
         top: 52.4%;
-        left: 71.2%;
       }
     }
   }
 }
 
-@media only screen and (min-height: 653px) {
+@media only screen and (min-height: 653px) and (max-height: 655px) {
   main {
     .slideshow-container {
       .icon-angle-container {
-        left: 57.6%;
         top: 51.5%;
       }
       .text {
@@ -266,41 +274,11 @@ main {
   }
 }
 
-@media only screen and (min-height: 667px) {
-  main {
-    .slideshow-container {
-      .icon-angle-container {
-        left: 68.5%;
-      }
-    }
-  }
-}
-
-@media only screen and (min-height: 720px) {
-  main {
-    .slideshow-container {
-      .icon-angle-container {
-        left: 78%;
-        top: 52.4%;
-      }
-    }
-  }
-}
-@media only screen and (min-height: 731px) {
-  main {
-    .slideshow-container {
-      .icon-angle-container {
-        left: 71.1%;
-      }
-    }
-  }
-}
 @media only screen and (min-height: 812px) {
   main {
     .slideshow-container {
       .icon-angle-container {
         top: 53.1%;
-        left: 68.3%;
       }
     }
   }
@@ -311,7 +289,6 @@ main {
     .slideshow-container {
       .icon-angle-container {
         top: 53.1%;
-        left: 71%;
       }
     }
   }
@@ -380,7 +357,6 @@ main {
       }
       .icon-angle-container {
         top: 60%;
-        left: 70%;
         .icon-angle {
           width: 15vw;
           height: 10vh;
@@ -507,8 +483,9 @@ main {
   }
   main {
     .slideshow-container {
+      height: 70vh;
       .icon-angle-container {
-        top: 60%;
+        top: 61%;
         left: 57.8%;
         .icon-angle {
           height: 6em;
@@ -596,10 +573,9 @@ main {
   }
   main {
     .slideshow-container {
-      height: 61.4vh;
+      height: 62vh;
       .icon-angle-container {
-        left: 58.6%;
-        top: 60.6%;
+        top: 60.4%;
       }
       .mySlides {
         .text {
@@ -614,7 +590,7 @@ main {
     }
     .main-sec {
       height: 45vh;
-      margin-top: 5.9em;
+      margin-top: 5em;
       .img {
         height: 45vh;
       }
@@ -630,6 +606,163 @@ main {
     }
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  main {
+    .slideshow-container {
+      height: 63.3vh;
+      .icon-angle-container {
+        top: 62vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 655px) and (max-height: 666px) {
+  main {
+    .slideshow-container {
+      height: 60.9vh;
+      .icon-angle-container {
+        top: 59vh;
+        left: 57.9vw;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 701px) and (max-height: 730px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 59.8vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 719px) and (max-height: 730px) {
+  main {
+    .slideshow-container {
+      height: 61.5vh;
+      .icon-angle-container {
+        top: 60vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 720px) and (max-height: 730px) {
+  main {
+    .slideshow-container {
+      height: 70vh;
+      .icon-angle-container {
+        top: 60vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 550px) {
+  main {
+    .slideshow-container {
+      height: auto;
+      .icon-angle-container {
+        top: 52.2vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 768px) and (max-height: 790px) {
+  main {
+    .slideshow-container {
+      height: 62.2vh;
+      .icon-angle-container {
+        top: 60.5vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 900px) and (max-height: 990px) {
+  main {
+    .slideshow-container {
+      height: 63.2vh;
+      .icon-angle-container {
+        top: 62vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 801px) and (max-height: 810px) {
+  main {
+    .slideshow-container {
+      height: 62.5vh;
+      .icon-angle-container {
+        top: 61%;
+      }
+    }
+  }
+}
+@media only screen and (min-height: 864px) and (max-height: 870px) {
+  main {
+    .slideshow-container {
+      height: 63vh;
+      .icon-angle-container {
+        top: 61.6%;
+        left: 58.1%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 1050px) and (max-height: 1060px) {
+  main {
+    .slideshow-container {
+      height: 64.3vh;
+      .icon-angle-container {
+        top: 63%;
+        left: 58.2%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 1440px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 62.6%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1792px) {
+  main {
+    .slideshow-container {
+      height: 64.5vh;
+      .icon-angle-container {
+        top: 63.5vh;
+        left: 58.3%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  main {
+    .slideshow-container {
+      height: 64.2vh;
+      .icon-angle-container {
+        top: 63.2vh;
+        left: 58.3%;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 2560px) {
   .not-active {
     .navbar {
@@ -645,8 +778,10 @@ main {
   }
   main {
     .slideshow-container {
+      height: 65.7vh;
       .icon-angle-container {
-        top: 62.5%;
+        top: 62.3%;
+        left: 58.7%;
         .icon-angle {
           height: 9em;
           width: 9.5em;
@@ -679,91 +814,6 @@ main {
         p {
           font-size: 2em;
         }
-      }
-    }
-  }
-}
-
-@media only screen and (min-height: 760px) {
-  main {
-    .slideshow-container {
-      .icon-angle-container {
-        top: 60.7%;
-        left: 57.9%;
-      }
-    }
-  }
-}
-
-@media only screen and (min-height: 800px) {
-  main {
-    .slideshow-container {
-      .icon-angle-container {
-        top: 61%;
-      }
-    }
-  }
-}
-@media only screen and (min-height: 864px) {
-  main {
-    .slideshow-container {
-      .icon-angle-container {
-        top: 61.6%;
-        left: 58.1%;
-      }
-    }
-  }
-}
-
-@media only screen and (min-height: 900px) {
-  main {
-    .slideshow-container {
-      .icon-angle-container {
-        top: 62%;
-        left: 58%;
-      }
-    }
-  }
-}
-
-@media only screen and (min-height: 1050px) {
-  main {
-    .slideshow-container {
-      .icon-angle-container {
-        top: 63%;
-        left: 58.2%;
-      }
-    }
-  }
-}
-
-@media only screen and (min-height: 1080px) {
-  main {
-    .slideshow-container {
-      .icon-angle-container {
-        top: 63.3%;
-        left: 58.3%;
-      }
-    }
-  }
-}
-
-@media only screen and (min-height: 1120px) {
-  main {
-    .slideshow-container {
-      .icon-angle-container {
-        top: 63.6%;
-        left: 58.3%;
-      }
-    }
-  }
-}
-@media only screen and (min-height: 1440px) {
-  main {
-    .slideshow-container {
-      .icon-angle-container {
-        top: 62.6%;
-        left: 58.7%;
       }
     }
   }
