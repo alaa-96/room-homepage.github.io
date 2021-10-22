@@ -743,15 +743,6 @@ main .main-sec .main-txt {
   }
 }
 
-@media only screen and (min-height: 900px) and (max-height: 990px) {
-  main .slideshow-container {
-    height: 63.2vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 62vh;
-  }
-}
-
 @media only screen and (min-height: 801px) and (max-height: 810px) {
   main .slideshow-container {
     height: 62.5vh;

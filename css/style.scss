@@ -685,16 +685,16 @@ main {
   }
 }
 
-@media only screen and (min-height: 900px) and (max-height: 990px) {
-  main {
-    .slideshow-container {
-      height: 63.2vh;
-      .icon-angle-container {
-        top: 62vh;
-      }
-    }
-  }
-}
+// @media only screen and (min-height: 900px) and (max-height: 990px) {
+//   main {
+//     .slideshow-container {
+//       height: 63.2vh;
+//       .icon-angle-container {
+//         top: 62vh;
+//       }
+//     }
+//   }
+// }
 
 @media only screen and (min-height: 801px) and (max-height: 810px) {
   main {
