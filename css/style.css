@@ -323,7 +323,7 @@ main .main-sec .first-img {
 }
 
 main .main-sec .second-img {
-  background: url(/images/image-about-light.jpg) no-repeat center/cover;
+  background: url(../images/image-about-light.jpg) no-repeat center/cover;
 }
 
 main .main-sec .main-p {
