@@ -596,6 +596,7 @@ main {
   }
   main {
     .slideshow-container {
+      height: 61.4vh;
       .icon-angle-container {
         left: 58.6%;
         top: 60.6%;
@@ -612,8 +613,10 @@ main {
       }
     }
     .main-sec {
+      height: 45vh;
+      margin-top: 5.9em;
       .img {
-        background-size: auto;
+        height: 45vh;
       }
       .main-txt {
         h2 {

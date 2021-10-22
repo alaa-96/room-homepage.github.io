@@ -665,6 +665,9 @@ main .main-sec .main-txt {
   .not-active .navbar .nav-link {
     font-size: 1em;
   }
+  main .slideshow-container {
+    height: 61.4vh;
+  }
   main .slideshow-container .icon-angle-container {
     left: 58.6%;
     top: 60.6%;
@@ -675,8 +678,12 @@ main .main-sec .main-txt {
   main .slideshow-container .mySlides .text p {
     font-size: 1em;
   }
+  main .main-sec {
+    height: 45vh;
+    margin-top: 5.9em;
+  }
   main .main-sec .img {
-    background-size: auto;
+    height: 45vh;
   }
   main .main-sec .main-txt h2 {
     font-size: 1.2em;
