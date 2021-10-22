@@ -319,7 +319,7 @@ main .main-sec .img {
 }
 
 main .main-sec .first-img {
-  background: url(images/image-about-dark.jpg) no-repeat center/cover;
+  background: url(../images/image-about-dark.jpg) no-repeat center/cover;
 }
 
 main .main-sec .second-img {
