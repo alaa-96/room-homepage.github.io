@@ -167,7 +167,7 @@ main {
   }
   #third-slide {
     .slide-img {
-      background: url(/images/mobile-image-hero-3.jpg) no-repeat center/cover;
+      background: url(../images/mobile-image-hero-3.jpg) no-repeat center/cover;
     }
   }
   .main-sec {
@@ -546,14 +546,14 @@ main {
       #first-slide {
         display: flex;
         .slide-img {
-          background: url(/images/desktop-image-hero-1.jpg) no-repeat
+          background: url(../images/desktop-image-hero-1.jpg) no-repeat
             center/cover;
         }
       }
       #second-slide {
         display: none;
         .slide-img {
-          background: url(/images/desktop-image-hero-2.jpg) no-repeat
+          background: url(../images/desktop-image-hero-2.jpg) no-repeat
             center/cover;
         }
       }

@@ -310,7 +310,7 @@ main #second-slide .slide-img {
 }
 
 main #third-slide .slide-img {
-  background: url(/images/mobile-image-hero-3.jpg) no-repeat center/cover;
+  background: url(../images/mobile-image-hero-3.jpg) no-repeat center/cover;
 }
 
 main .main-sec .img {
@@ -620,13 +620,13 @@ main .main-sec .main-txt {
     display: flex;
   }
   main .slideshow-container #first-slide .slide-img {
-    background: url(/images/desktop-image-hero-1.jpg) no-repeat center/cover;
+    background: url(../images/desktop-image-hero-1.jpg) no-repeat center/cover;
   }
   main .slideshow-container #second-slide {
     display: none;
   }
   main .slideshow-container #second-slide .slide-img {
-    background: url(/images/desktop-image-hero-2.jpg) no-repeat center/cover;
+    background: url(../images/desktop-image-hero-2.jpg) no-repeat center/cover;
   }
   main .slideshow-container #third-slide {
     display: none;
