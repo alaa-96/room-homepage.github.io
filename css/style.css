@@ -302,15 +302,15 @@ main .mySlides .slide-img {
 }
 
 main #first-slide .slide-img {
-  background: url(/images/mobile-image-hero-1.jpg) no-repeat center/cover;
+  background: url(../images/mobile-image-hero-1.jpg) no-repeat center/cover;
 }
 
 main #second-slide .slide-img {
-  background: url(/images/mobile-image-hero-2.jpg) no-repeat center/cover;
+  background: url(../images/mobile-image-hero-2.jpg) no-repeat center/cover;
 }
 
 main #third-slide .slide-img {
-  background: url(/images/mobile-image-hero-3.jpg) no-repeat center/cover;
+  background: url(../images/mobile-image-hero-3.jpg) no-repeat center/cover;
 }
 
 main .main-sec .img {
@@ -319,11 +319,11 @@ main .main-sec .img {
 }
 
 main .main-sec .first-img {
-  background: url(/images/image-about-dark.jpg) no-repeat center/cover;
+  background: url(../images/image-about-dark.jpg) no-repeat center/cover;
 }
 
 main .main-sec .second-img {
-  background: url(/images/image-about-light.jpg) no-repeat center/cover;
+  background: url(../images/image-about-light.jpg) no-repeat center/cover;
 }
 
 main .main-sec .main-p {
