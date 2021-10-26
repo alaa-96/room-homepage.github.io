@@ -222,7 +222,6 @@ main p {
 }
 
 main .text {
-  height: 50vh;
   margin: auto 5vw auto 2rem;
   padding-top: 7vh;
 }
@@ -336,10 +335,6 @@ main .main-sec .second-img {
 
 main .main-sec .main-p {
   margin-bottom: 0%;
-}
-
-main .main-sec .main-txt {
-  height: 35vh;
 }
 
 @media only screen and (min-width: 280px) and (min-height: 568px) {
@@ -545,15 +540,10 @@ main .main-sec .main-txt {
   }
   main .slideshow-container .mySlides .slide-img {
     width: 64%;
-    height: 65vh;
-  }
-  main .slideshow-container .mySlides .slide-text {
-    height: 75vh;
   }
   main .slideshow-container .mySlides .text {
     position: relative;
     width: 38%;
-    height: 55vh;
   }
   main .slideshow-container .mySlides .text h1 {
     font-size: 3em;
@@ -596,7 +586,6 @@ main .main-sec .main-txt {
   }
   main .main-sec .main-txt {
     width: 30%;
-    height: 40vh;
   }
   main .main-sec .main-txt h2 {
     font-size: 1em;
@@ -619,12 +608,6 @@ main .main-sec .main-txt {
   main .slideshow-container .icon-angle-container {
     top: 53.2vh;
     left: 58vw;
-  }
-  main .main-sec {
-    height: 45vh;
-  }
-  main .main-sec .img {
-    height: 45vh;
   }
   main .main-sec .main-txt h2 {
     font-size: 1.2em;
