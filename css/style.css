@@ -627,6 +627,15 @@ main .main-sec .main-p {
   }
 }
 
+@media only screen and (min-width: 1370px) {
+  main .slideshow-container {
+    height: auto;
+  }
+  main .slideshow-container .icon-angle-container {
+    top: 55vh;
+  }
+}
+
 @media only screen and (min-height: 600px) and (max-height: 601px) {
   main .slideshow-container .icon-angle-container {
     top: 53vh;
