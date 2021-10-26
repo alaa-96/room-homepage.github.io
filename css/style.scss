@@ -597,15 +597,15 @@ main {
         width: 100%;
         .slide-img {
           width: 64%;
-          // height: 65vh;
+          height: 65vh;
         }
         .slide-text {
-          // height: 75vh;
+          height: 75vh;
         }
         .text {
           position: relative;
           width: 38%;
-          // height: 55vh;
+          height: 55vh;
 
           h1 {
             font-size: 3em;
@@ -646,7 +646,7 @@ main {
       flex-direction: row;
       .main-txt {
         width: 30%;
-        // height: 40vh;
+        height: 40vh;
         h2 {
           font-size: 1em;
         }
