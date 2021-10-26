@@ -278,7 +278,7 @@ main .slideshow-container #third-slide {
 
 main .slideshow-container .icon-angle-container {
   position: absolute;
-  top: 50.5%;
+  top: 51vh;
   right: 0%;
   cursor: pointer;
 }
@@ -342,69 +342,52 @@ main .main-sec .main-txt {
   height: 35vh;
 }
 
-@media only screen and (min-width: 320px), (min-height: 368px) {
+@media only screen and (min-width: 280px) and (min-height: 568px) {
   main .slideshow-container .mySlides {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  main .slideshow-container .mySlides .text {
+    height: auto;
+    margin-bottom: 10vh;
+  }
   main .slideshow-container .icon-angle-container {
-    top: 50.2%;
+    top: 50vh;
   }
   main .main-sec .main-txt {
-    height: 45vh;
+    height: auto;
     margin-left: 2em;
+    margin-bottom: 10vh;
   }
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-height: 640px) {
   main .slideshow-container .icon-angle-container {
-    top: 50%;
-  }
-}
-
-@media only screen and (min-width: 360px) {
-  main .slideshow-container .icon-angle-container {
-    top: 51.1%;
-  }
-}
-
-@media only screen and (min-width: 375px) {
-  main .slideshow-container .icon-angle-container {
-    top: 51.5%;
+    top: 51.3vh;
   }
   main .main-sec .main-txt {
-    height: 35vh;
     margin-left: 3em;
     font-size: 1.1em;
   }
 }
 
-@media only screen and (min-width: 411px), (min-height: 371) {
+@media only screen and (min-height: 667px) {
   main .slideshow-container .icon-angle-container {
-    top: 52.4%;
+    top: 51.5vh;
   }
 }
 
-@media only screen and (min-height: 653px) and (max-height: 655px) {
+@media only screen and (min-height: 731px) {
   main .slideshow-container .icon-angle-container {
-    top: 51.5%;
-  }
-  main .slideshow-container .text {
-    height: 60vh;
+    top: 52.4vh;
   }
 }
 
-@media only screen and (min-height: 812px) {
+@media only screen and (min-height: 800px) {
   main .slideshow-container .icon-angle-container {
-    top: 53.1%;
-  }
-}
-
-@media only screen and (min-height: 823px) {
-  main .slideshow-container .icon-angle-container {
-    top: 53.1%;
+    top: 53.1vh;
   }
 }
 
@@ -419,7 +402,6 @@ main .main-sec .main-txt {
   }
   .active .navbar .close {
     margin-right: 10vw;
-    cursor: pointer;
   }
   .active .navbar .close .icon-close {
     width: 5vw;
@@ -433,9 +415,6 @@ main .main-sec .main-txt {
     margin: 3vw;
   }
   main .slideshow-container .mySlides .slide-img,
-  main .slideshow-container .mySlides .text {
-    height: 70vh;
-  }
   main .slideshow-container .mySlides .text {
     padding-left: 3em;
     padding-top: 3em;
@@ -456,7 +435,7 @@ main .main-sec .main-txt {
     width: 3em;
   }
   main .slideshow-container .icon-angle-container {
-    top: 60%;
+    top: 50vh;
   }
   main .slideshow-container .icon-angle-container .icon-angle {
     width: 15vw;
@@ -471,7 +450,6 @@ main .main-sec .main-txt {
     letter-spacing: 0.5em;
   }
   main .main-sec .main-txt {
-    height: 0vh;
     padding-right: 2em;
     padding-left: 2em;
   }
@@ -480,33 +458,15 @@ main .main-sec .main-txt {
   }
 }
 
-@media only screen and (min-width: 1024px), (min-height: 1366px) {
-  .active .navbar .nav-menu .nav-item .nav-link {
-    font-size: 2.5em;
-    margin: 3vw;
+@media only screen and (min-height: 1366px) {
+  main .slideshow-container .icon-angle-container {
+    top: 50vh;
   }
-  main .slideshow-container .mySlides h1 {
-    font-size: 6.5em;
-  }
-  main .slideshow-container .mySlides p {
-    font-size: 2.7em;
-    padding-right: 0.5em;
-  }
-  main .slideshow-container .mySlides .btn {
-    font-size: 2.7em;
-    padding-top: 1em;
-  }
-  main .main-sec h2 {
-    font-size: 2.5em;
-  }
-  main .main-sec .main-txt {
-    height: 50vh;
-    padding-right: 2em;
-    padding-left: 3em;
-  }
-  main .main-sec .main-txt p {
-    font-size: 2.5em;
-    padding-top: 1em;
+}
+
+@media only screen and (min-height: 720px) and (max-height: 730px) {
+  main .slideshow-container .icon-angle-container {
+    top: 52.2vh;
   }
 }
 
@@ -564,12 +524,9 @@ main .main-sec .main-txt {
   .close {
     display: none;
   }
-  main .slideshow-container {
-    height: 70vh;
-  }
   main .slideshow-container .icon-angle-container {
-    top: 61%;
-    left: 57.8%;
+    top: 54.6vh;
+    left: 57.8vw;
   }
   main .slideshow-container .icon-angle-container .icon-angle {
     height: 6em;
@@ -584,15 +541,19 @@ main .main-sec .main-txt {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 65vh;
     width: 100%;
   }
   main .slideshow-container .mySlides .slide-img {
     width: 64%;
+    height: 65vh;
+  }
+  main .slideshow-container .mySlides .slide-text {
+    height: 75vh;
   }
   main .slideshow-container .mySlides .text {
     position: relative;
     width: 38%;
+    height: 55vh;
   }
   main .slideshow-container .mySlides .text h1 {
     font-size: 3em;
@@ -655,17 +616,9 @@ main .main-sec .main-txt {
   .not-active .navbar .nav-link {
     font-size: 1em;
   }
-  main .slideshow-container {
-    height: 62vh;
-  }
   main .slideshow-container .icon-angle-container {
-    top: 60.4%;
-  }
-  main .slideshow-container .mySlides .text h1 {
-    font-size: 3em;
-  }
-  main .slideshow-container .mySlides .text p {
-    font-size: 1em;
+    top: 53.2vh;
+    left: 58vw;
   }
   main .main-sec {
     height: 45vh;
@@ -679,166 +632,6 @@ main .main-sec .main-txt {
   }
   main .main-sec .main-txt p {
     font-size: 1em;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  main .slideshow-container {
-    height: 63.3vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 62vh;
-  }
-}
-
-@media only screen and (min-height: 655px) and (max-height: 666px) {
-  main .slideshow-container {
-    height: 70vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 59vh;
-    left: 57.9vw;
-  }
-}
-
-@media only screen and (min-height: 701px) and (max-height: 730px) {
-  main .slideshow-container .icon-angle-container {
-    top: 59.8vh;
-  }
-}
-
-@media only screen and (min-height: 719px) and (max-height: 730px) {
-  main .slideshow-container {
-    height: 61.5vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 60vh;
-  }
-}
-
-@media only screen and (min-height: 720px) and (max-height: 730px) {
-  main .slideshow-container {
-    height: 70vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 60vh;
-  }
-}
-
-@media only screen and (min-width: 540px) and (max-width: 550px) {
-  main .slideshow-container {
-    height: auto;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 52.2vh;
-  }
-}
-
-@media only screen and (min-height: 768px) and (max-height: 790px) {
-  main .slideshow-container {
-    height: 62.2vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 60.5vh;
-  }
-}
-
-@media only screen and (min-height: 801px) and (max-height: 810px) {
-  main .slideshow-container {
-    height: 70vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 61%;
-  }
-}
-
-@media only screen and (min-height: 864px) and (max-height: 870px) {
-  main .slideshow-container {
-    height: 63vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 61.6%;
-    left: 58.1%;
-  }
-}
-
-@media only screen and (min-height: 1050px) and (max-height: 1060px) {
-  main .slideshow-container {
-    height: 64.3vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 63%;
-    left: 58.2%;
-  }
-}
-
-@media only screen and (min-height: 1440px) {
-  main .slideshow-container .icon-angle-container {
-    top: 62.6%;
-  }
-}
-
-@media only screen and (min-width: 1792px) {
-  main .slideshow-container {
-    height: 64.5vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 63.5vh;
-    left: 58.3%;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  main .slideshow-container {
-    height: 64.2vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 63.2vh;
-    left: 58.3%;
-  }
-}
-
-@media only screen and (min-width: 2560px) {
-  .not-active .navbar {
-    width: 60%;
-  }
-  .not-active .navbar .nav-link {
-    font-size: 2.5em;
-  }
-  .not-active .logo {
-    height: 3em;
-    width: 10em;
-  }
-  main .slideshow-container {
-    height: 65.7vh;
-  }
-  main .slideshow-container .icon-angle-container {
-    top: 62.3%;
-    left: 58.7%;
-  }
-  main .slideshow-container .icon-angle-container .icon-angle {
-    height: 9em;
-    width: 9.5em;
-  }
-  main .slideshow-container .icon-angle-container .icon-angle .icon-img {
-    height: 2.5em;
-    width: 1.5em;
-  }
-  main .slideshow-container .mySlides .text h1 {
-    font-size: 4.5em;
-  }
-  main .slideshow-container .mySlides .text p {
-    font-size: 2.5em;
-  }
-  main .slideshow-container .mySlides .text .btn {
-    font-size: 2em;
-  }
-  main .main-sec .main-txt h2 {
-    font-size: 2em;
-    letter-spacing: 0.5em;
-  }
-  main .main-sec .main-txt p {
-    font-size: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */
