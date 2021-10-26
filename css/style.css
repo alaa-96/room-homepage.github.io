@@ -611,6 +611,9 @@ main .main-sec .main-p {
   .not-active .navbar .nav-link {
     font-size: 1em;
   }
+  main .slideshow-container {
+    height: auto;
+  }
   main .slideshow-container .icon-angle-container {
     top: 53.2vh;
     left: 58vw;
