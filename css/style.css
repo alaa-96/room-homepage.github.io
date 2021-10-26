@@ -615,7 +615,7 @@ main .main-sec .main-p {
     height: auto;
   }
   main .slideshow-container .icon-angle-container {
-    top: 53.2vh;
+    top: 54vh;
     left: 58vw;
   }
   main .main-sec .main-txt h2 {
@@ -624,6 +624,43 @@ main .main-sec .main-p {
   }
   main .main-sec .main-txt p {
     font-size: 1em;
+  }
+}
+
+@media only screen and (min-height: 600px) and (max-height: 601px) {
+  main .slideshow-container .icon-angle-container {
+    top: 53vh;
+  }
+}
+
+@media only screen and (min-height: 768px) and (max-height: 769px) {
+  main .slideshow-container .icon-angle-container {
+    top: 55.6vh;
+  }
+}
+
+@media only screen and (min-height: 800px) and (max-height: 801px) {
+  main .slideshow-container .icon-angle-container {
+    top: 56vh;
+  }
+}
+
+@media only screen and (min-height: 864px) and (max-height: 865px) {
+  main .slideshow-container .icon-angle-container {
+    top: 56.8vh;
+  }
+}
+
+@media only screen and (min-height: 900px) and (max-height: 990px) {
+  main .slideshow-container .icon-angle-container {
+    top: 57vh;
+  }
+}
+
+@media only screen and (min-height: 1050px) and (max-height: 1120px) {
+  main .slideshow-container .icon-angle-container {
+    top: 58.4vh;
+    left: 58.2%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -293,16 +293,6 @@ main {
 //   }
 // }
 
-// @media only screen and (min-width: 600px) {
-//   main {
-//     .slideshow-container {
-//       .icon-angle-container {
-//         top: 53vh;
-//       }
-//     }
-//   }
-// }
-
 @media only screen and (min-height: 800px) {
   main {
     .slideshow-container {
@@ -577,7 +567,6 @@ main {
   }
   main {
     .slideshow-container {
-      // height: 70vh;
       .icon-angle-container {
         top: 54.6vh;
         left: 57.8vw;
@@ -674,7 +663,7 @@ main {
     .slideshow-container {
       height: auto;
       .icon-angle-container {
-        top: 53.2vh;
+        top: 54vh;
         left: 58vw;
       }
     }
@@ -695,6 +684,44 @@ main {
   }
 }
 
+@media only screen and (min-height: 600px) and (max-height: 601px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 53vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 768px) and (max-height: 769px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 55.6vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 800px) and (max-height: 801px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 56vh;
+      }
+    }
+  }
+}
+@media only screen and (min-height: 864px) and (max-height: 865px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 56.8vh;
+      }
+    }
+  }
+}
 // @media only screen and (min-width: 540px) and (max-width: 550px) {
 //   main {
 //     .slideshow-container {
@@ -717,16 +744,15 @@ main {
 //   }
 // }
 
-// // @media only screen and (min-height: 900px) and (max-height: 990px) {
-// //   main {
-// //     .slideshow-container {
-// //       height: 63.2vh;
-// //       .icon-angle-container {
-// //         top: 62vh;
-// //       }
-// //     }
-// //   }
-// // }
+@media only screen and (min-height: 900px) and (max-height: 990px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 57vh;
+      }
+    }
+  }
+}
 
 // @media only screen and (min-height: 801px) and (max-height: 810px) {
 //   main {
@@ -750,13 +776,21 @@ main {
 //   }
 // }
 
-// @media only screen and (min-height: 1050px) and (max-height: 1060px) {
+@media only screen and (min-height: 1050px) and (max-height: 1120px) {
+  main {
+    .slideshow-container {
+      .icon-angle-container {
+        top: 58.4vh;
+        left: 58.2%;
+      }
+    }
+  }
+}
+// @media only screen and (min-height: 1120px) and (max-height: 1121px) {
 //   main {
 //     .slideshow-container {
-//       height: 64.3vh;
 //       .icon-angle-container {
-//         top: 63%;
-//         left: 58.2%;
+//         top: 58.2vh;
 //       }
 //     }
 //   }
