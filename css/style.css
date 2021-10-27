@@ -642,6 +642,12 @@ main .main-sec .main-p {
   }
 }
 
+@media only screen and (min-height: 737px) and (max-height: 740px) {
+  main .slideshow-container .icon-angle-container {
+    top: 55.2vh;
+  }
+}
+
 @media only screen and (min-height: 768px) and (max-height: 769px) {
   main .slideshow-container .icon-angle-container {
     top: 55.6vh;
